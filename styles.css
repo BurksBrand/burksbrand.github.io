@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Open+Sans:wght@400;700&display=swap');
+/* Define a CSS variable */
+:root {
+    --main-color: #4169E1; /*Royal Blue*/
+    --secondary-color: #FF4500; /* Sunset Orange */
+    --tertiary-color: #008000;/*Emerald Green*/
+}
+
+html,body {
+    margin: 0px;
+}
+
+div._burksbrand {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color); 
+    color:  var(--secondary-color); 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+div._burksbrand header {
+    /* border: solid 2px var(--tertiary-color); ; */
+    padding-left: .5em;
+    padding-right: .5em;
+    border-start-start-radius: 1em;
+    background: linear-gradient(to bottom, white, transparent);
+    height: 4em;
+    margin-bottom: .5em;
+}
+div._burksbrand header h1 {
+    border: solid 2px var(--tertiary-color);
+    font-family: 'Dancing Script', cursive;
+    background-color: black;
+    /* text-shadow: .02em .02em .1em white; */
+    text-shadow: 1px -1px  white;
+    box-shadow: 10px 5px 5px rgba(0,0, 0,.5);
+    margin: 0em;
+    padding: .5em;
+    border-radius: .5em;
+}
+div._burksbrand nav{
+    text-align: left;
+    margin-left:1.5em;
+    width: fit-content;
+    box-shadow: 0em -4px black;
+    top:0px;
+    position: sticky;
+}
+div._burksbrand nav  a{
+    text-decoration: none;
+    color:var(--secondary-color); 
+}
+div._burksbrand nav ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+}
+div._burksbrand nav ul li {
+    display: inline-block;
+    margin-left: 0em;
+    color:white;
+    background-color: black;
+    font-weight: bold;
+    padding-bottom: .5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: solid 3px var(--tertiary-color);
+    border-left: solid 2px var(--tertiary-color);
+    border-right: solid 2px var(--tertiary-color);
+}
+div._burksbrand nav ul li:first-child {
+    border-bottom-left-radius: .5em;
+}
+div._burksbrand nav ul li:last-child {
+    border-bottom-right-radius: .5em;
+}
+div._burksbrand footer {
+    font-size: large;
+    text-align: center;
+    border: solid 1px var(--tertiary-color);
+    color: black;
+    background-color: white;
+    font-family: 'Monaco', monospace;
+}
+div._burksbrand main {
+    margin-top: 1em;
+}
+div._burksbrand main section {
+    background-color: white;
+    box-shadow: 0px 2px 5px black;
+    padding: 1em 5em;
+    margin: 2.5em 5em;
+    border-radius: 1em;
+}
+
+@media (max-width: 767px) {
+    :root {
+        --main-color: black; /*Royal Blue*/
+        --secondary-color: white; /* Sunset Orange */
+        --tertiary-color: white;/*Emerald Green*/
+    }
+    
+    div._burksbrand {
+        
+        font-family: 'Roboto', sans-serif;
+    }
+    div._burksbrand header {
+        padding-left: .5em;
+        padding-right: .5em;
+        border-start-start-radius: 1em;
+        background: unset;
+        height: 4em;
+        text-align: center;
+        margin-bottom: .5em;
+    }
+    div._burksbrand header h1 {
+        font-family: 'Roboto', sans-serif;
+        text-shadow: none;
+    }
+    
+    div._burksbrand nav{
+        text-align: center;
+        margin:0;
+        padding: .25em;
+        width: 100%;
+        box-shadow: unset;
+        top:0px;
+        position: relative;
+    }
+    
+    div._burksbrand nav ul li {
+        display: block;
+        width: 100%;
+        margin-left: 0em;
+        color:white;
+        background-color: black;
+        font-weight: bold;
+        padding-bottom: .5em;
+        padding-top:.5em;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: unset;
+        border: unset;
+        box-shadow: unset;
+    }
+    div._burksbrand nav ul li:first-child {
+        border-bottom-left-radius: unset;
+    }
+    div._burksbrand nav ul li:last-child {
+        border-bottom-right-radius: unset;
+    }
+
+    div._burksbrand main section {
+        color: black;
+        box-shadow: 0px 2px 5px black;
+        padding: .5em 1em;
+        margin: .5em 1em;
+        border-radius: 0;
+    }
+    
+}
